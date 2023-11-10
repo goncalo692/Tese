@@ -703,7 +703,7 @@ def upload_file():
     st.session_state['SETUP_CONFIG_FORM'] = False
     st.session_state['FILE_NAME'] = ""
     error = False
-    index = 2
+    index = 1
     
     with st.sidebar:
         if st.experimental_get_query_params() != {}:
@@ -778,7 +778,6 @@ def upload_file():
                     dict.update(temp_dict)
     
     return dict, error, status                      
-
 
 def resample_function(key):
     
